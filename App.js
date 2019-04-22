@@ -52,13 +52,8 @@ Settings.navigationOptions = {
   drawerIcon: <Icon name="settings" />
 };
 
-const drawerOptions = {
-  initialRouteName: 'Home' //TODO: NOT WORKING!
-};
-const DrawerNav = createDrawerNavigator(
-  {About, Home, Settings},
-  {drawerOptions}
-);
+const drawerOptions = {initialRouteName: 'Home'};
+const DrawerNav = createDrawerNavigator({About, Home, Settings}, drawerOptions);
 
 const styles = StyleSheet.create({
   container: {},
